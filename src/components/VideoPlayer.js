@@ -9,8 +9,8 @@ const VideoPlayer = () => {
     useEffect(() => {
         const fetchVideo = async () => {
             try {
-                const url = await fetchVideoStream(id); // Ensure this is a valid asynchronous call
-                setVideoUrl(url); // Set the correct video URL
+                const url = await fetchVideoStream(id);
+                setVideoUrl(url);
             } catch (error) {
                 console.error('Error fetching video stream:', error);
             }
